@@ -1,41 +1,39 @@
 
 [
   {
-    "id": 1,
-    "nombre": "Pantalón negro",
-    "categoria": "Ropa",
+   "id": 1,
+    "nombre": "Auriculares JBL Quantum 100N",
+    "categoria": "Electrónica",
     "imagenes": [
-        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón",
-        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón+Trasero",
-        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón+Detalle"
+        "/imagenes/kima/auriculares.jpg"
     ],
-    "talla": "44",
-    "tienda": "Zara",
-    "precio": 35.95,
-    "enlace": "https://www.zara.com/es/"
+    "marca": "JBL",
+    "tienda": "Mediamarkt (visto en Las Terrazas)",
+    "precio": "33,99",
+    "enlace": "https://canarias.mediamarkt.es/products/auriculares-gaming-jbl-quantum-100n-circumaurales-diadema-con-cable-microfono-rojo-y-azul?_pos=1&_psq=jbl+quantum+100&_psid=2358a075d&_ss=e"
   },
   {
     "id": 2,
-    "nombre": "Libro de Mortadelo y Filemón",
-    "categoria": "Libros",
+    "nombre": "Xiaomi Redmi Watch 5 Active Negro",
+    "categoria": "Electrónica",
     "imagenes": [
-        "https://placehold.co/400x500/48304d/ffffff?text=Libro"
+        "/imagenes/kima/smart-watch.jpg"
     ],
-    "isbn": "9780000000000",
-    "tienda": "Casa del Libro",
-    "precio": 15.00,
-    "enlace": "https://www.casadellibro.com/"
+    "marca": "Xiaomi",
+    "tienda": "Mediamarkt (visto en Las Arenas)",
+    "precio": "29,99",
+    "enlace": "https://www.mediamarkt.es/es/product/_smartwatch-xiaomi-redmi-watch-5-active-bluetooth-bateria-hasta-18-dias-multideporte-black-1583775.html?srsltid=AYCX9vLLR16BgFdnKh4OWypDRTowD6JLtXeL8ctvGBLih8IvVkE-llZq"
   },
   {
     "id": 3,
-    "nombre": "Smart Watch",
-    "categoria": "Electrónica",
+    "nombre": "Cómic de Mortadelo y Filemón",
+    "categoria": "Libros",
     "imagenes": [
-        "https://placehold.co/400x500/333333/ffffff?text=Smart+Watch"
+        "/imagenes/kima/comic-mortadelo.jpg"
     ],
-    "marca": "Xiaomi",
-    "tienda": "Mediamarkt",
-    "precio": 39.99,
-    "enlace": ""
+    "isbn": "Cualquiera",
+    "tienda": "Alcampo",
+    "precio": "Indeterminado",
+    "enlace": "https://www.casadellibro.com/"
   }
 ]

@@ -16,7 +16,7 @@
   background-color: #263B52;
   color: #E8EFF3;
   text-align: center;
-  padding: 2.5rem 1.5rem 2.5rem;
+  padding: 2rem 1.5rem 2.5rem;
   border-bottom: 3px solid #A9C4D8;
 }
 
@@ -74,7 +74,6 @@
 
 /* BOTONES */
 
-.app-kima .selector-listas,
 .app-kima .filtros {
   position: relative;
   z-index: 1;
@@ -85,7 +84,6 @@
   margin-top: 1.5rem;
 }
 
-.app-kima .selector-listas button,
 .app-kima .filtros button {
   background: #A9C4D8;
   color: #263B52;
@@ -94,10 +92,9 @@
   padding: 0.65rem 1.3rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-.app-kima .selector-listas button:hover,
 .app-kima .filtros button:hover {
   background: #E8EFF3;
   color: #263B52;
@@ -110,10 +107,25 @@
   top: 1.25rem;
   right: 1.5rem;
   z-index: 2;
-  margin-top: 0;
 }
 
-/* REGALOS */
+.app-kima .selector-listas button {
+  background: #A9C4D8;
+  color: #263B52;
+  border: 1px solid #E8EFF3;
+  border-radius: 0.5rem;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.app-kima .selector-listas button:hover {
+  background: #E8EFF3;
+  color: #263B52;
+}
+
+/* FONDO GENERAL Y DISTRIBUCIÓN */
 
 .app-kima .regalos {
   background: #405D78;
@@ -126,6 +138,7 @@
   justify-content: center;
 }
 
+
 /* TARJETAS */
 
 .app-kima .regalo {
@@ -136,19 +149,8 @@
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(20, 35, 50, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.app-kima .regalo .enlace-deshabilitado {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.65rem 1.2rem;
-  background: #D5DCE2;
-  color: #596775;
-  border: none;
-  border-radius: 0.4rem;
-  font: inherit;
-  cursor: not-allowed;
-  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-kima .regalo:hover {
@@ -157,8 +159,15 @@
   box-shadow: 0 8px 24px rgba(20, 35, 50, 0.35);
 }
 
+/* CONTENIDO DE LAS TARJETAS */
+
 .app-kima .regalo > div {
-  padding: 1.25rem 1.25rem 0.75rem;
+  padding: 1rem 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 190px;
+  max-height: 350px;
 }
 
 .app-kima .regalo h3 {
@@ -170,16 +179,21 @@
 }
 
 .app-kima .regalo p {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   line-height: 1.5;
   color: #354657;
 }
 
-/* ENLACES */
+/* ENLACES Y BOTONES */
+
+.app-kima .regalo a,
+.app-kima .regalo .enlace-deshabilitado {
+  margin-top: auto;
+  align-self: flex-start;
+}
 
 .app-kima .regalo a {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.65rem 1.2rem;
   background: #385675;
   color: #FFFFFF;
@@ -191,6 +205,19 @@
 .app-kima .regalo a:hover {
   background: #52769A;
 }
+
+.app-kima .regalo .enlace-deshabilitado {
+  display: inline-block;
+  padding: 0.65rem 1.2rem;
+  background: #D5DCE2;
+  color: #596775;
+  border: none;
+  border-radius: 0.4rem;
+  font: inherit;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
 
 /* CARRUSEL DE IMÁGENES */
 
