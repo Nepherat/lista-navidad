@@ -33,7 +33,20 @@
     ],
     "isbn": "Cualquiera",
     "tienda": "Alcampo",
-    "precio": "Indeterminado",
+    "precio": "Sin determinar",
     "enlace": "https://www.casadellibro.com/"
+  },
+  {
+    "id": 4,
+    "nombre": "Carpeta con cremallera A4",
+    "categoria": "Libros",
+    "imagenes": [
+        "/imagenes/kima/carpeta.jpg",
+        "/imagenes/kima/carpeta-cremallera.jpg"
+    ],
+    "isbn": "Cualquiera (imagen de ejemplo)",
+    "tienda": "Librería",
+    "precio": "Sin determinar",
+    "enlace": ""
   }
 ]
