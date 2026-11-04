@@ -2,40 +2,77 @@
 [
   {
     "id": 1,
-    "nombre": "Vestido negro",
+    "nombre": "Falda cuadros violeta",
     "categoria": "Ropa",
     "imagenes": [
-        "https://placehold.co/400x500/48304d/ffffff?text=Vestido",
-        "https://placehold.co/400x500/48304d/ffffff?text=Vestido+Trasero",
-        "https://placehold.co/400x500/48304d/ffffff?text=Vestido+Detalle"
+        "/imagenes/neku/falda-violeta.jpg",
+        "/imagenes/neku/falda-violeta-2.jpg"
     ],
-    "talla": "M",
-    "tienda": "Zara",
-    "precio": 29.95,
-    "enlace": "https://www.zara.com/es/"
+    "talla": "L-XL (es la talla de la etiqueta)",
+    "tienda": "Bichai (Visto en Las Terrazas)",
+    "precio": "24,99",
+    "enlace": ""
   },
   {
     "id": 2,
-    "nombre": "Libro de fantasía",
-    "categoria": "Libros",
+    "nombre": "Blusa negra",
+    "categoria": "Ropa",
     "imagenes": [
-        "https://placehold.co/400x500/48304d/ffffff?text=Libro"
+        "/imagenes/neku/blusa-negra.jpg"
     ],
-    "isbn": "9780000000000",
-    "tienda": "Casa del Libro",
-    "precio": 20.00,
-    "enlace": "https://www.casadellibro.com/"
+    "talla": "S",
+    "tienda": "Primark (Visto en Las Arenas)",
+    "precio": "12,00",
+    "enlace": "https://www.primark.com/es-es/p/blusa-de-crepe-con-cuello-de-pico-negro-991180107804"
   },
   {
     "id": 3,
-    "nombre": "Auriculares Sony",
-    "categoria": "Electrónica",
+    "nombre": "Nación de las bestias: El señor del Sabbath",
+    "categoria": "Libros",
     "imagenes": [
-        "https://placehold.co/400x500/333333/ffffff?text=Auriculares"
+        "/imagenes/neku/nacion-de-las-bestias.jpg"
     ],
-    "marca": "Sony",
-    "tienda": "Sony",
-    "precio": 59.99,
-    "enlace": ""
+    "isbn": "9788412030440",
+    "tienda": "Casa del Libro (hay que pedirlo)",
+    "precio": "18,95",
+    "enlace": "https://www.casadellibro.com/libro-el-senor-del-sabbath-la-nacion-de-las-bestias-1/9788412030440/11302170?srsltid=AYCX9vKT1EoN67A7gEK_XxQpXEU46AqpodG16Xe_Vj1tcDN2r4DSh1By"
+  },
+  {
+    "id": 4,
+    "nombre": "Zodiac Academy: El despertar (Tapa dura)",
+    "categoria": "Libros",
+    "imagenes": [
+        "/imagenes/neku/zodiac-academy.jpg"
+    ],
+    "isbn": "9788408324294",
+    "tienda": "Casa del Libro",
+    "precio": "24,95",
+    "enlace": "https://www.casadellibro.com/libro-zodiac-academy-1-el-despertar-edicion-especial/9788408324294/18275243"
+  },
+  {
+    "id": 5,
+     "nombre": "Blusa cuadros",
+    "categoria": "Ropa",
+    "imagenes": [
+        "/imagenes/neku/blusa-cuadros.jpg",
+        "/imagenes/neku/blusa-cuadros-2.jpg"        
+    ],
+    "talla": "M",
+    "tienda": "Lefties",
+    "precio": "17.99",
+    "enlace": "https://www.lefties.com/ic/mujer/ropa/camisas-%7C-blusas/blusa-estampado-vichy-c1030267513p748898648.html?colorId=064&parentId=749614110"
+  },
+  {
+    "id": 6,
+   "nombre": "Falda negra",
+    "categoria": "Ropa",
+    "imagenes": [
+        "/imagenes/neku/falda-negra.jpg",
+        "/imagenes/neku/falda-negra-2.jpg"        
+    ],
+    "talla": "L",
+    "tienda": "Zara (Visto en CC Atlántico)",
+    "precio": "39,95",
+    "enlace": "https://www.zara.com/ic/es/falda-combinada-fluida-zw-collection-p02560209.html?v1=557968984"
   }
 ]

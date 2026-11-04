@@ -134,19 +134,8 @@
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.app-neku .regalo .enlace-deshabilitado {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.65rem 1.2rem;
-  background: #C8C5CE;
-  color: #5B5662;
-  border: none;
-  border-radius: 0.4rem;
-  font: inherit;
-  cursor: not-allowed;
-  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-neku .regalo:hover {
@@ -155,8 +144,15 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
+/* CONTENIDO DE LAS TARJETAS */
+
 .app-neku .regalo > div {
-  padding: 1.25rem 1.25rem 0.75rem;
+  padding: 1rem 1.25rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 190px;
+  max-height: 350px;
 }
 
 .app-neku .regalo h3 {
@@ -168,14 +164,21 @@
 }
 
 .app-neku .regalo p {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   line-height: 1.5;
   color: #39333F;
 }
 
+/* BOTONES DE PRODUCTO */
+
+.app-neku .regalo a,
+.app-neku .regalo .enlace-deshabilitado {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 .app-neku .regalo a {
   display: inline-block;
-  margin-top: 1rem;
   padding: 0.65rem 1.2rem;
   background: #563477;
   color: #E5E1EA;
@@ -186,6 +189,18 @@
 
 .app-neku .regalo a:hover {
   background: #79549B;
+}
+
+.app-neku .regalo .enlace-deshabilitado {
+  display: inline-block;
+  padding: 0.65rem 1.2rem;
+  background: #C8C5CE;
+  color: #5B5662;
+  border: none;
+  border-radius: 0.4rem;
+  font: inherit;
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 /* CARRUSEL DE IMÁGENES */
