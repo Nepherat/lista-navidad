@@ -1,0 +1,41 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Vestido negro",
+    "categoria": "Ropa",
+    "imagenes": [
+        "https://placehold.co/400x500/48304d/ffffff?text=Vestido",
+        "https://placehold.co/400x500/48304d/ffffff?text=Vestido+Trasero",
+        "https://placehold.co/400x500/48304d/ffffff?text=Vestido+Detalle"
+    ],
+    "talla": "M",
+    "tienda": "Zara",
+    "precio": 29.95,
+    "enlace": "https://www.zara.com/es/"
+  },
+  {
+    "id": 2,
+    "nombre": "Libro de fantasía",
+    "categoria": "Libros",
+    "imagenes": [
+        "https://placehold.co/400x500/48304d/ffffff?text=Libro"
+    ],
+    "isbn": "9780000000000",
+    "tienda": "Casa del Libro",
+    "precio": 20.00,
+    "enlace": "https://www.casadellibro.com/"
+  },
+  {
+    "id": 3,
+    "nombre": "Auriculares Sony",
+    "categoria": "Electrónica",
+    "imagenes": [
+        "https://placehold.co/400x500/333333/ffffff?text=Auriculares"
+    ],
+    "marca": "Sony",
+    "tienda": "Sony",
+    "precio": 59.99,
+    "enlace": "https://www.sony.es/"
+  }
+]

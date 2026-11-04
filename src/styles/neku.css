@@ -1,0 +1,335 @@
+
+/* CONTENEDOR */
+
+.app-neku #root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.app-neku header {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #111014;
+  color: #C8C5CE;
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  border-bottom: 2px solid #A8A5B0;
+}
+
+.app-neku header h1 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+  color: #f2f1f4;
+  letter-spacing: 2px;
+}
+
+.app-neku header h1::before {
+  content: '☾ ';
+  color: #D8D5DE;
+}
+
+.app-neku header h1::after {
+  content: ' ✧';
+  color: #D8D5DE;
+}
+
+/* CIELO ESTRELLADO */
+
+.app-neku header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image:
+    radial-gradient(circle, #D8D5DE 1.5px, transparent 2px),
+    radial-gradient(circle, #9673B5 2px, transparent 2.5px),
+    radial-gradient(circle, #A8A5B0 1px, transparent 1.5px),
+    radial-gradient(circle, #D8D5DE 2px, transparent 2.5px),
+    radial-gradient(circle, #9673B5 1px, transparent 1.5px),
+    radial-gradient(circle, #A8A5B0 1.5px, transparent 2px);
+
+  background-size:
+    180px 130px,
+    230px 170px,
+    120px 110px,
+    270px 190px,
+    150px 160px,
+    210px 140px;
+
+  background-position:
+    15px 10px,
+    70px 45px,
+    35px 65px,
+    130px 20px,
+    95px 100px,
+    180px 80px;
+}
+
+/* BOTONES */
+
+.app-neku .filtros {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.app-neku .filtros button {
+  background: #C8C5CE;
+  color: #352044;
+  border: 1px solid #E5E1EA;
+  border-radius: 2rem;
+  padding: 0.65rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.app-neku .filtros button:hover {
+  background: #9673B5;
+  color: #FFFFFF;
+  border-color: #9673B5;
+}
+
+/* BOTÓN PARA CAMBIAR DE LISTA */
+
+.app-neku .selector-listas {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 2;
+}
+
+.app-neku .selector-listas button {
+  background: #C8C5CE;
+  color: #352044;
+  border: 1px solid #E5E1EA;
+  border-radius: 2rem;
+  padding: 0.55rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.app-neku .selector-listas button:hover {
+  background: #9673B5;
+  color: #FFFFFF;
+}
+
+/* FONDO GENERAL Y DISTRIBUCIÓN */
+
+.app-neku .regalos {
+  background: #352044;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 300px));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* TARJETAS */
+
+.app-neku .regalo {
+  background: #F4F1F5;
+  color: #25212A;
+  border: 1px solid #A8A5B0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-neku .regalo:hover {
+  transform: translateY(-4px);
+  border-color: #9673B5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.app-neku .regalo > div {
+  padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.app-neku .regalo h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #352044;
+  margin: 0 0 1rem;
+}
+
+.app-neku .regalo p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #39333F;
+}
+
+.app-neku .regalo a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.2rem;
+  background: #563477;
+  color: #E5E1EA;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: background 0.2s ease;
+}
+
+.app-neku .regalo a:hover {
+  background: #79549B;
+}
+
+/* CARRUSEL DE IMÁGENES */
+
+.app-neku .carrusel-imagenes {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.app-neku .carrusel-imagenes > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #EAE7ED;
+  cursor: zoom-in;
+}
+
+/* FLECHAS DEL CARRUSEL Y DEL VISOR */
+
+.app-neku .carrusel-imagenes .flecha,
+.app-neku .imagen-ampliada .flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s ease;
+}
+
+.app-neku .carrusel-imagenes .flecha {
+  width: 36px;
+  height: 36px;
+  font-size: 1.8rem;
+}
+
+.app-neku .carrusel-imagenes .flecha:hover,
+.app-neku .imagen-ampliada .flecha:hover {
+  background: #9673B5;
+}
+
+.app-neku .flecha-anterior {
+  left: 10px;
+}
+
+.app-neku .flecha-siguiente {
+  right: 10px;
+}
+
+/* IMAGEN AMPLIADA */
+
+.app-neku .visor-ampliado {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.app-neku .imagen-ampliada {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.app-neku .imagen-ampliada img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+/* BOTÓN DE CERRAR */
+
+.app-neku .cerrar-visor {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #C8C5CE;
+  color: #352044;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-neku .cerrar-visor:hover {
+  background: #9673B5;
+  color: white;
+}
+
+/* FLECHAS DEL VISOR AMPLIADO */
+
+.app-neku .imagen-ampliada .flecha {
+  z-index: 2;
+  width: 45px;
+  height: 55px;
+  font-size: 2.5rem;
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+  .app-neku header {
+    padding: 2rem 1rem;
+  }
+
+  .app-neku header h1 {
+    font-size: 2.5rem;
+  }
+
+  .app-neku .regalos {
+    padding: 2rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .app-neku .visor-ampliado {
+    padding: 1rem;
+  }
+
+  .app-neku .imagen-ampliada img {
+    max-width: 85vw;
+    max-height: 80vh;
+  }
+}

@@ -1,0 +1,263 @@
+
+/* FONDO GENERAL */
+
+.app-kima {
+  background-color: #263B52;
+  color: #30291F;
+  min-height: 100vh;
+}
+
+/* HEADER */
+
+.app-kima header {
+  position: relative;
+  background-color: #382C25;
+  color: #E5D4AE;
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  border-bottom: 3px solid #C5A46D;
+}
+
+.app-kima header h1 {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+  color: #E5D4AE;
+}
+
+/* BOTONES */
+
+.app-kima .selector-listas,
+.app-kima .filtros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.app-kima .selector-listas button,
+.app-kima .filtros button {
+  background: #D5B77A;
+  color: #382C25;
+  border: 1px solid #E5D4AE;
+  border-radius: 0.4rem;
+  padding: 0.65rem 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.app-kima .selector-listas button:hover,
+.app-kima .filtros button:hover {
+  background: #E5D4AE;
+}
+
+/* BOTÓN PARA CAMBIAR DE LISTA */
+
+.app-kima .selector-listas {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 2;
+  margin-top: 0;
+}
+
+/* REGALOS */
+
+.app-kima .regalos {
+  background: #263B52;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 300px));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* TARJETAS */
+
+.app-kima .regalo {
+  background: #F5F0E6;
+  color: #30291F;
+  border: 1px solid #C5A46D;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+}
+
+.app-kima .regalo > div {
+  padding: 1.25rem 1.25rem 0.75rem;
+}
+
+.app-kima .regalo h3 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #382C25;
+  margin: 0 0 1rem;
+}
+
+.app-kima .regalo p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #30291F;
+}
+
+/* ENLACES */
+
+.app-kima .regalo a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.2rem;
+  background: #385675;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.app-kima .regalo a:hover {
+  background: #52769A;
+}
+
+/* CARRUSEL DE IMÁGENES */
+
+.app-kima .carrusel-imagenes {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.app-kima .carrusel-imagenes > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #F5F0E6;
+  cursor: zoom-in;
+}
+
+/* FLECHAS DEL CARRUSEL Y DEL VISOR */
+
+.app-kima .carrusel-imagenes .flecha,
+.app-kima .imagen-ampliada .flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s ease;
+}
+
+.app-kima .carrusel-imagenes .flecha {
+  width: 36px;
+  height: 36px;
+  font-size: 1.8rem;
+}
+
+.app-kima .carrusel-imagenes .flecha:hover,
+.app-kima .imagen-ampliada .flecha:hover {
+  background: #52769A;
+}
+
+.app-kima .flecha-anterior {
+  left: 10px;
+}
+
+.app-kima .flecha-siguiente {
+  right: 10px;
+}
+
+/* IMAGEN AMPLIADA */
+
+.app-kima .visor-ampliado {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.app-kima .imagen-ampliada {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.app-kima .imagen-ampliada img {
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+/* BOTÓN DE CERRAR */
+
+.app-kima .cerrar-visor {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #D5B77A;
+  color: #382C25;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-kima .cerrar-visor:hover {
+  background: #E5D4AE;
+}
+
+/* FLECHAS DEL VISOR AMPLIADO */
+
+.app-kima .imagen-ampliada .flecha {
+  z-index: 2;
+  width: 45px;
+  height: 55px;
+  font-size: 2.5rem;
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+  .app-kima header {
+    padding: 2rem 1rem;
+  }
+
+  .app-kima header h1 {
+    font-size: 2.3rem;
+  }
+
+  .app-kima .regalos {
+    padding: 2rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .app-kima .visor-ampliado {
+    padding: 1rem;
+  }
+
+  .app-kima .imagen-ampliada img {
+    max-width: 85vw;
+    max-height: 80vh;
+  }
+}

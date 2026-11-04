@@ -1,0 +1,41 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Pantalón negro",
+    "categoria": "Ropa",
+    "imagenes": [
+        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón",
+        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón+Trasero",
+        "https://placehold.co/400x500/48304d/ffffff?text=Pantalón+Detalle"
+    ],
+    "talla": "44",
+    "tienda": "Zara",
+    "precio": 35.95,
+    "enlace": "https://www.zara.com/es/"
+  },
+  {
+    "id": 2,
+    "nombre": "Libro de Mortadelo y Filemón",
+    "categoria": "Libros",
+    "imagenes": [
+        "https://placehold.co/400x500/48304d/ffffff?text=Libro"
+    ],
+    "isbn": "9780000000000",
+    "tienda": "Casa del Libro",
+    "precio": 15.00,
+    "enlace": "https://www.casadellibro.com/"
+  },
+  {
+    "id": 3,
+    "nombre": "Smart Watch",
+    "categoria": "Electrónica",
+    "imagenes": [
+        "https://placehold.co/400x500/333333/ffffff?text=Smart+Watch"
+    ],
+    "marca": "Sony",
+    "tienda": "Sony",
+    "precio": 39.99,
+    "enlace": "https://www.sony.es/"
+  }
+]
