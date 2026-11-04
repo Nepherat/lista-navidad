@@ -2,8 +2,8 @@
 /* FONDO GENERAL */
 
 .app-kima {
-  background-color: #263B52;
-  color: #30291F;
+  background-color: #405D78;
+  color: #283747;
   min-height: 100vh;
 }
 
@@ -11,25 +11,73 @@
 
 .app-kima header {
   position: relative;
-  background-color: #382C25;
-  color: #E5D4AE;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #263B52;
+  color: #E8EFF3;
   text-align: center;
-  padding: 3rem 1.5rem 2.5rem;
-  border-bottom: 3px solid #C5A46D;
+  padding: 2.5rem 1.5rem 2.5rem;
+  border-bottom: 3px solid #A9C4D8;
+}
+
+/* CIELO NEVADO */
+
+.app-kima header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image:
+    radial-gradient(circle, #E8EFF3 1.5px, transparent 2px),
+    radial-gradient(circle, #A9C4D8 2px, transparent 2.5px),
+    radial-gradient(circle, #FFFFFF 1px, transparent 1.5px),
+    radial-gradient(circle, #D5E5F0 2px, transparent 2.5px),
+    radial-gradient(circle, #A9C4D8 1px, transparent 1.5px);
+
+  background-size:
+    180px 130px,
+    230px 170px,
+    120px 110px,
+    270px 190px,
+    150px 160px;
+
+  background-position:
+    15px 10px,
+    70px 45px,
+    35px 65px,
+    130px 20px,
+    95px 100px;
 }
 
 .app-kima header h1 {
+  position: relative;
+  z-index: 1;
   font-family: Georgia, serif;
   font-size: 3rem;
   font-weight: 400;
   margin: 0 0 0.5rem;
-  color: #E5D4AE;
+  color: #F5F8FA;
+  letter-spacing: 1px;
+}
+
+.app-kima header h1::before {
+  content: '❅ ';
+  color: #D5E5F0;
+}
+
+.app-kima header h1::after {
+  content: ' ⛇';
+  color: #D5E5F0;
 }
 
 /* BOTONES */
 
 .app-kima .selector-listas,
 .app-kima .filtros {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -39,18 +87,20 @@
 
 .app-kima .selector-listas button,
 .app-kima .filtros button {
-  background: #D5B77A;
-  color: #382C25;
-  border: 1px solid #E5D4AE;
-  border-radius: 0.4rem;
+  background: #A9C4D8;
+  color: #263B52;
+  border: 1px solid #E8EFF3;
+  border-radius: 0.5rem;
   padding: 0.65rem 1.3rem;
   font-weight: 700;
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .app-kima .selector-listas button:hover,
 .app-kima .filtros button:hover {
-  background: #E5D4AE;
+  background: #E8EFF3;
+  color: #263B52;
 }
 
 /* BOTÓN PARA CAMBIAR DE LISTA */
@@ -66,7 +116,7 @@
 /* REGALOS */
 
 .app-kima .regalos {
-  background: #263B52;
+  background: #405D78;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem;
@@ -80,11 +130,31 @@
 
 .app-kima .regalo {
   background: #F5F0E6;
-  color: #30291F;
-  border: 1px solid #C5A46D;
-  border-radius: 0.5rem;
+  color: #283747;
+  border: 1px solid #A9C4D8;
+  border-radius: 0.6rem;
   overflow: hidden;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 18px rgba(20, 35, 50, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-kima .regalo .enlace-deshabilitado {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.2rem;
+  background: #D5DCE2;
+  color: #596775;
+  border: none;
+  border-radius: 0.4rem;
+  font: inherit;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.app-kima .regalo:hover {
+  transform: translateY(-4px);
+  border-color: #D5E5F0;
+  box-shadow: 0 8px 24px rgba(20, 35, 50, 0.35);
 }
 
 .app-kima .regalo > div {
@@ -95,14 +165,14 @@
   font-family: Georgia, serif;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #382C25;
+  color: #263B52;
   margin: 0 0 1rem;
 }
 
 .app-kima .regalo p {
   margin: 0.5rem 0;
   line-height: 1.5;
-  color: #30291F;
+  color: #354657;
 }
 
 /* ENLACES */
@@ -115,6 +185,7 @@
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 0.4rem;
+  transition: background 0.2s ease;
 }
 
 .app-kima .regalo a:hover {
@@ -134,7 +205,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  background: #F5F0E6;
+  background: #E8EFF3;
   cursor: zoom-in;
 }
 
@@ -182,7 +253,7 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(17, 29, 42, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,15 +287,15 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: #D5B77A;
-  color: #382C25;
+  background: #A9C4D8;
+  color: #263B52;
   font-size: 2rem;
   line-height: 1;
   cursor: pointer;
 }
 
 .app-kima .cerrar-visor:hover {
-  background: #E5D4AE;
+  background: #E8EFF3;
 }
 
 /* FLECHAS DEL VISOR AMPLIADO */

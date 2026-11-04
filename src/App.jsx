@@ -194,9 +194,15 @@ function App() {
                 <p>Tienda: {regalo.tienda}</p>
                 <p>Precio: {regalo.precio} €</p>
 
-                <a href={regalo.enlace} target="_blank" rel="noreferrer">
-                  Ver producto
-                </a>
+                {regalo.enlace ? (
+                  <a href={regalo.enlace} target="_blank" rel="noreferrer">
+                    Ver producto
+                 </a>
+                ) : (
+                  <button className="enlace-deshabilitado" disabled>
+                    Sin página web
+                  </button>
+                )}
               </div>
             </article>
           ))}

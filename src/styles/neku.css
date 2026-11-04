@@ -15,7 +15,7 @@
   background: #111014;
   color: #C8C5CE;
   text-align: center;
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 2rem 1.5rem 2.5rem;
   border-bottom: 2px solid #A8A5B0;
 }
 
@@ -23,7 +23,7 @@
   position: relative;
   z-index: 1;
   font-family: 'Patrick Hand', cursive;
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: 400;
   margin: 0 0 0.5rem;
   color: #f2f1f4;
@@ -31,12 +31,12 @@
 }
 
 .app-neku header h1::before {
-  content: '☾ ';
+  content: '⏾ ';
   color: #D8D5DE;
 }
 
 .app-neku header h1::after {
-  content: ' ✧';
+  content: ' ⚝';
   color: #D8D5DE;
 }
 
@@ -48,30 +48,13 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  opacity: 0.5;
 
   background-image:
-    radial-gradient(circle, #D8D5DE 1.5px, transparent 2px),
-    radial-gradient(circle, #9673B5 2px, transparent 2.5px),
-    radial-gradient(circle, #A8A5B0 1px, transparent 1.5px),
-    radial-gradient(circle, #D8D5DE 2px, transparent 2.5px),
-    radial-gradient(circle, #9673B5 1px, transparent 1.5px),
-    radial-gradient(circle, #A8A5B0 1.5px, transparent 2px);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 120'%3E%3Cpath d='M12 3 L13.2 6 L17 6.5 L14 8.5 L14.5 12 L12 10 L9.5 12 L10 8.5 L7 6.5 L10.8 6 Z' fill='%23D8D5DE'/%3E%3Cpath d='M65 30 L66.2 33 L70 33.5 L67 35.5 L67.5 39 L65 37 L62.5 39 L63 35.5 L60 33.5 L63.8 33 Z' fill='%239673B5'/%3E%3Cpath d='M125 12 L126.2 15 L130 15.5 L127 17.5 L127.5 21 L125 19 L122.5 21 L123 17.5 L120 15.5 L123.8 15 Z' fill='%23A8A5B0'/%3E%3Cpath d='M35 85 L35.8 87 L38.5 87.5 L36.5 89 L37 91.5 L35 90 L33 91.5 L33.5 89 L31.5 87.5 L34.2 87 Z' fill='%23D8D5DE'/%3E%3Cpath d='M100 75 L101.2 78 L105 78.5 L102 80.5 L102.5 84 L100 82 L97.5 84 L98 80.5 L95 78.5 L98.8 78 Z' fill='%239673B5'/%3E%3Cpath d='M145 100 L145.8 102 L148.5 102.5 L146.5 104 L147 106.5 L145 105 L143 106.5 L143.5 104 L141.5 102.5 L144.2 102 Z' fill='%23D8D5DE'/%3E%3C/svg%3E");
 
-  background-size:
-    180px 130px,
-    230px 170px,
-    120px 110px,
-    270px 190px,
-    150px 160px,
-    210px 140px;
-
-  background-position:
-    15px 10px,
-    70px 45px,
-    35px 65px,
-    130px 20px,
-    95px 100px,
-    180px 80px;
+  background-size: 160px 120px;
+  background-repeat: repeat;
 }
 
 /* BOTONES */
@@ -83,7 +66,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 
 .app-neku .filtros button {
@@ -91,7 +74,7 @@
   color: #352044;
   border: 1px solid #E5E1EA;
   border-radius: 2rem;
-  padding: 0.65rem 1.5rem;
+  padding: 0.65rem 1.3rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -151,6 +134,19 @@
   overflow: hidden;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-neku .regalo .enlace-deshabilitado {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.2rem;
+  background: #C8C5CE;
+  color: #5B5662;
+  border: none;
+  border-radius: 0.4rem;
+  font: inherit;
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .app-neku .regalo:hover {
