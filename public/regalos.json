@@ -42,12 +42,13 @@
     "nombre": "Zodiac Academy: El despertar (Tapa dura)",
     "categoria": "Libros",
     "imagenes": [
-        "/imagenes/neku/zodiac-academy.jpg"
+        "/imagenes/neku/zodiac-academy.jpg",
+        "/imagenes/neku/zodiac-academy-2.jpg"
     ],
     "isbn": "9788408324294",
-    "tienda": "Casa del Libro",
-    "precio": "24,95",
-    "enlace": "https://www.casadellibro.com/libro-zodiac-academy-1-el-despertar-edicion-especial/9788408324294/18275243"
+    "tienda": "Corte Inglés Mesa y Lopez",
+    "precio": "23,99",
+    "enlace": "https://www.elcorteingles.es/libros/A200993275-el-despertar-zodiac-academy-1-edicion-especial-limitada-con-cantos-tintados-tapa-dura/"
   },
   {
     "id": 5,
@@ -55,10 +56,11 @@
     "categoria": "Ropa",
     "imagenes": [
         "/imagenes/neku/blusa-cuadros.jpg",
-        "/imagenes/neku/blusa-cuadros-2.jpg"        
+        "/imagenes/neku/blusa-cuadros-2.jpg",
+        "/imagenes/neku/blusa-cuadros-3.jpg"        
     ],
-    "talla": "M",
-    "tienda": "Lefties",
+    "talla": "L",
+    "tienda": "Lefties (Visto en El Mirador)",
     "precio": "17,99",
     "enlace": "https://www.lefties.com/ic/mujer/ropa/camisas-%7C-blusas/blusa-estampado-vichy-c1030267513p748898648.html?colorId=064&parentId=749614110"
   },
@@ -68,10 +70,12 @@
     "categoria": "Ropa",
     "imagenes": [
         "/imagenes/neku/falda-negra.jpg",
-        "/imagenes/neku/falda-negra-2.jpg"        
+        "/imagenes/neku/falda-negra-2.jpg",
+        "/imagenes/neku/falda-negra-3.jpg",
+        "/imagenes/neku/falda-negra-4.jpg"        
     ],
-    "talla": "L",
-    "tienda": "Zara (Visto en CC Atlántico)",
+    "talla": "XL",
+    "tienda": "Zara (Visto en Atlántico y Mirador)",
     "precio": "39,95",
     "enlace": "https://www.zara.com/ic/es/falda-combinada-fluida-zw-collection-p02560209.html?v1=557968984"
   }

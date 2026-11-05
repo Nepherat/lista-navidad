@@ -29,24 +29,24 @@
     "nombre": "Cómic de Mortadelo y Filemón",
     "categoria": "Libros",
     "imagenes": [
-        "/imagenes/kima/comic-mortadelo.jpg"
+        "/imagenes/kima/comic-mortadelo.jpg",
+        "/imagenes/kima/comic-mortadelo-2.jpg"
     ],
     "isbn": "Cualquiera",
-    "tienda": "Alcampo",
-    "precio": "Sin determinar",
-    "enlace": "https://www.casadellibro.com/"
-  },
-  {
-    "id": 4,
-    "nombre": "Carpeta con cremallera A4",
-    "categoria": "Libros",
-    "imagenes": [
-        "/imagenes/kima/carpeta.jpg",
-        "/imagenes/kima/carpeta-cremallera.jpg"
-    ],
-    "isbn": "Cualquiera (imagen de ejemplo)",
-    "tienda": "Librería",
+    "tienda": "Alcampo/Corte Inglés Mesa y Lopez",
     "precio": "Sin determinar",
     "enlace": ""
+  },
+   {
+    "id": 4,
+     "nombre": "Camiseta Monte Fuji",
+    "categoria": "Ropa",
+    "imagenes": [
+        "/imagenes/kima/camiseta.jpg"      
+    ],
+    "talla": "3XL",
+    "tienda": "Citees (Visto en El Muelle)",
+    "precio": "14,99",
+    "enlace": "https://www.pampling.com/productos/12246-Coffee-Cat-in-Mt-Fuji"
   }
 ]
