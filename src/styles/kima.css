@@ -358,4 +358,14 @@
     max-width: 85vw;
     max-height: 80vh;
   }
+
+/* AJUSTES PARA MÓVILES */
+
+@media (max-width: 600px) {
+  .app-kima .selector-listas {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+  }
 }
