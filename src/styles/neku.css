@@ -347,11 +347,18 @@
   /* AJUSTES PARA MÓVILES */
 
 @media (max-width: 600px) {
+  .app-neku header {
+    position: relative;
+    padding-top: 4.5rem;
+  }
+
   .app-neku .selector-listas {
-    position: static;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: flex;
-    justify-content: center;
-    margin: 0 auto 1.25rem;
+    justify-content: flex-end;
+    margin: 0;
   }
 }
 }
