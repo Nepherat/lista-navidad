@@ -31,12 +31,12 @@
 }
 
 .app-neku header h1::before {
-  content: '⏾ ';
+  content: '☽ ';
   color: #D8D5DE;
 }
 
 .app-neku header h1::after {
-  content: ' ⚝';
+  content: ' ✩';
   color: #D8D5DE;
 }
 
