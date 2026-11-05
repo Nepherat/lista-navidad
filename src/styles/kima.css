@@ -362,7 +362,7 @@
 /* AJUSTES PARA MÓVILES */
 
 @media (max-width: 600px) {
-  .app-kima .selector-listas {
+  .app-neku .selector-listas {
     position: static;
     display: flex;
     justify-content: center;
